@@ -65,3 +65,12 @@ document.addEventListener('keydown', (event) => {
 });
 
 
+// toggle between back and white for background color
+
+const toggleButton = document.getElementById('toggle');
+let isWhite = true;
+
+toggleButton.addEventListener('click', () => {
+    document.body.style.backgroundColor = isWhite ? 'black' : 'white'; 
+  isWhite = !isWhite;
+});
